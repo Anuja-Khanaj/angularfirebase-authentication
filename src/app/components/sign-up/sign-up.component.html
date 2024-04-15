@@ -1,41 +1,41 @@
-<div class="displayTable">
-    <div class="displayTableCell">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
       <div class="authBlock">
         <h3>Sign Up</h3>
-        <div class="formGroup">
+        <div class="form-group">
           <input
             type="email"
-            class="formControl"
+            class="form-control"
             placeholder="Email Address"
             #userEmail
             required
           />
         </div>
-        <div class="formGroup">
+        <div class="form-group">
           <input
             type="password"
-            class="formControl"
+            class="form-control"
             placeholder="Password"
             #userPwd
             required
           />
         </div>
-        <div class="formGroup">
+        <div class="form-group">
           <input
             type="button"
-            class="btn btnPrimary"
+            class="btn btn-primary btn-block"
             value="Sign Up"
             (click)="authService.SignUp(userEmail.value, userPwd.value)"
           />
         </div>
-        <div class="formGroup">
-          <span class="or"><span class="orInner">Or</span></span>
+        <div class="form-group text-center">
+          <span class="or">Or</span>
         </div>
-      <div class="redirectToLogin">
-        <span
-          >Already have an account?
-          <span class="redirect" routerLink="/sign-in">Log In</span></span
-        >
+        <div class="form-group text-center">
+          <span>Already have an account? <a href="/sign-in">Log In</a></span>
+        </div>
       </div>
     </div>
   </div>
+</div>
