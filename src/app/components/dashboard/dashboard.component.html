@@ -6,7 +6,7 @@
 </nav>
 
 <!-- Sidebar navigation -->
-<div class="container-fluid">
+<div class="container-fluid m-5 p-5">
   <div class="row">
     <nav class="col-md-2 d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
@@ -36,7 +36,7 @@
         <div class="row" *ngIf="authService.userData as user">
           <div class="col-md-12">
             <div class="media">
-              <img class="align-self-start mr-5 img-thumbnail rounded-circle" src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
+              <img class="align-self-start mr-5 img-thumbnail rounded-circle" src="{{(user.photoURL) ? user.photoURL : '../../../../../assets/download (7).jpeg'}}  "
                 alt="{{user.displayName}}">
               <div class="media-body">
                 <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
